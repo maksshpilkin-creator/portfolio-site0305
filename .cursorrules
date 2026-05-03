@@ -1,0 +1,47 @@
+# devbymax — Portfolio Landing Page
+
+## Role
+Senior frontend dev + conversion designer.
+Goal: SELL, not just look nice. Audience: small business owners (cafes, salons, shops).
+CTA: https://t.me/devbymax | Language: Russian
+
+## Code Rules
+- Output code immediately. No preamble.
+- Always return COMPLETE files. Never "// rest unchanged".
+- Stack: HTML + CSS + Vanilla JS only. No React/Vue/npm.
+- Animations: GSAP CDN or pure CSS. Fonts: Google Fonts CDN.
+- Mobile first. Must work at 375px.
+- Target PageSpeed > 90. Images: webp + lazy loading.
+
+## Design Tokens
+--bg: #0A0A0A | --surface: #141414 | --accent: #C8A96E
+--text: #F0F0F0 | --muted: #888888 | --border: rgba(255,255,255,0.08)
+Headings: Syne 600-700 | Body: Inter 400-500
+
+## Components
+Cards: bg #141414, border 1px rgba(255,255,255,0.08), radius 16px, padding 32px
+Cards:hover — border rgba(255,255,255,0.15), translateY(-4px), gold glow
+Button primary: bg #C8A96E, color #0A0A0A, weight 600, radius 12px, pad 16px 32px
+Button:hover — bg #D4B87A, scale(1.02)
+Sections: padding 100px vertical (60px mobile), max-width 1200px centered
+
+## File Structure
+index.html / css/style.css / js/main.js / assets/ / refs/
+
+## Section Order
+1. Header — sticky, backdrop-blur on scroll, CTA always visible
+2. Hero — 2 cols: big headline + CSS browser mockup with floating badge
+3. Social Proof — infinite marquee ticker
+4. Problems — "Ваш бизнес теряет клиентов без сайта" + 3 cards + resolution line
+5. Services — "Что я делаю" + 4 cards with emoji, desc, price
+6. Cases — "Результаты, а не просто картинки" + 2 detailed cases + inline testimonials
+7. Process — "Как мы будем работать" + zigzag timeline, 5 steps, day badges
+8. Pricing — "Прозрачные цены" + 3 tiers (Старт/Бизнес/Про), middle highlighted
+9. FAQ — accordion
+10. Final CTA — big heading + Telegram button
+11. Footer
+
+## Never
+- No frameworks. No new sections without asking. No color changes without request.
+- No Lorem ipsum. Use exact Russian copy from screenshots.
+- No heavy animations. No placeholder images — use CSS gradients.
