@@ -131,7 +131,9 @@ document.addEventListener('DOMContentLoaded', function () {
       if (target) {
         e.preventDefault();
         var headerHeight = header.offsetHeight;
-        var top = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+        var rootStyles = window.getComputedStyle(document.documentElement);
+        var extraGap = parseFloat(rootStyles.getPropertyValue('--anchor-scroll-gap')) || 56;
+        var top = target.getBoundingClientRect().top + window.scrollY - headerHeight - extraGap;
         window.scrollTo({ top: top, behavior: 'smooth' });
       }
     });
