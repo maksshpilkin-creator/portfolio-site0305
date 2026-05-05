@@ -259,10 +259,33 @@ button {
   font-size: 15px;
   color: var(--muted);
   transition: color 0.2s ease;
+  position: relative;
+  padding: 4px 0;
 }
 
 .nav-desktop a:hover {
   color: var(--text);
+}
+
+.nav-desktop a.is-active {
+  color: var(--accent);
+}
+
+.nav-desktop a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 1px;
+  background: rgba(200,169,110,0.75);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.nav-desktop a.is-active::after {
+  transform: scaleX(1);
 }
 
 .header-cta {
@@ -619,6 +642,46 @@ button {
 }
 
 /* ==================== PROBLEMS ==================== */
+
+#marquee {
+  background: #0D0D0D;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  min-width: 100%;
+  animation: marqueeMove 20s linear infinite;
+}
+
+.marquee-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  padding: 14px 18px;
+  white-space: nowrap;
+  color: #888888;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.marquee-separator {
+  color: #C8A96E;
+  opacity: 0.6;
+}
+
+@keyframes marqueeMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 
 #problems {
   padding: clamp(52px, 8vw, 68px) 0 var(--section-space);
@@ -1038,7 +1101,8 @@ button {
 
 .pricing-card--popular {
   border-color: var(--accent);
-  box-shadow: 0 0 40px rgba(200,169,110,0.12);
+  box-shadow: 0 0 40px rgba(200,169,110,0.1);
+  transform: scale(1.03);
   order: -1;
 }
 
@@ -1050,11 +1114,15 @@ button {
   background: var(--accent);
   color: var(--bg);
   border-radius: 100px;
-  padding: 4px 16px;
+  padding: 6px 20px;
   font-family: var(--font-body);
   font-weight: 600;
   font-size: 12px;
   white-space: nowrap;
+}
+
+.pricing-card--popular .btn {
+  width: 100%;
 }
 
 .pricing-name {
@@ -1206,9 +1274,13 @@ button {
 /* ==================== FOOTER ==================== */
 
 #footer {
-  border-top: 1px solid rgba(255,255,255,0.06);
+  border-top: 1px solid rgba(200,169,110,0.2);
   padding: clamp(40px, 4.5vw, 48px) 0 32px;
   background: #050505;
+}
+
+#footer .logo {
+  font-size: 20px;
 }
 
 .footer-top {
@@ -1246,6 +1318,7 @@ button {
   flex-direction: column;
   gap: 8px;
   padding-top: 24px;
+  padding-bottom: 48px;
   border-top: 1px solid rgba(255,255,255,0.06);
   font-size: 13px;
   color: var(--muted);
@@ -1508,7 +1581,7 @@ button:focus-visible {
   }
 
   #footer {
-    padding-bottom: 32px;
+    padding-bottom: 0;
   }
 
   .footer-top {
@@ -1550,12 +1623,8 @@ button:focus-visible {
 }
 
 @media (min-width: 1200px) {
-  .pricing-card--popular {
-    transform: scale(1.01);
-  }
-
   .pricing-card--popular:hover {
-    transform: scale(1.02);
+    transform: scale(1.04);
   }
 }
 
