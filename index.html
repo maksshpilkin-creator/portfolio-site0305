@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230A0A0A'/><circle cx='16' cy='16' r='10' fill='none' stroke='%23C8A96E' stroke-width='3'/><rect x='19' y='6' width='3' height='20' fill='%23C8A96E'/></svg>">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -86,28 +87,11 @@
         </div>
       </div>
     </section>
-    <div class="divider divider--wave" style="--fill: #0F0F0D; --from: #0A0A0A; background: #0A0A0A;">
+    <div class="divider divider--wave" style="--fill: #0D0D0D; --from: #0A0A0A; background: #0A0A0A;">
       <svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false">
         <path d="M0,26 C120,52 240,52 360,34 C480,16 600,12 720,30 C840,48 960,56 1080,40 C1200,24 1320,12 1440,28 L1440,80 L0,80 Z" fill="var(--fill)"></path>
       </svg>
     </div>
-
-    <section id="intro">
-      <div class="container intro-grid reveal">
-        <div class="intro-left">
-          <h2>Сайт, который окупится. Не&nbsp;«портфолио ради&nbsp;галочки».</h2>
-        </div>
-        <div class="intro-right">
-          <p class="intro-desc">Ваш сайт должен приносить результат: заявки, понятный путь клиента и автоматизацию ключевых шагов.</p>
-          <ul class="intro-features">
-            <li><span class="check">✓</span> Готов за 7 дней</li>
-            <li><span class="check">✓</span> Адаптив под мобильные</li>
-            <li><span class="check">✓</span> Уведомления в Telegram</li>
-            <li><span class="check">✓</span> SEO-оптимизация</li>
-          </ul>
-        </div>
-      </div>
-    </section>
 
     <section id="marquee">
       <div class="marquee-track" aria-hidden="true">
@@ -157,7 +141,10 @@
             <p>Кажется, что делать сайт долго, дорого, и непонятно. Но это не так — я помогаю сделать это просто.</p>
           </div>
         </div>
-        <p class="resolution-line reveal">Я решаю все три проблемы. Быстро, понятно и без головной боли.</p>
+        <p class="resolution-line reveal">
+          <span class="resolution-line__lead">Я решаю все три проблемы.</span>
+          <span class="resolution-line__accent">Быстро, понятно и без головной боли.</span>
+        </p>
       </div>
     </section>
     <div class="divider divider--curve" style="--fill: #141414; --from: #0F0F0F; background: #0F0F0F;">
@@ -260,10 +247,17 @@
             <div class="case-tags">
               <span class="badge">визитка</span>
               <span class="badge">beauty</span>
-              <span class="badge">клиент всегда прав</span>
+              <span class="badge">Люся</span>
             </div>
             <h3>Сайт для beauty-мастера</h3>
-            <p class="case-desc">Мастер работала только по сарафанному радио. Новые клиенты не могли её найти — Instagram не давал результата, ссылки на запись не было.</p>
+            <div class="case-block">
+              <span class="case-block-label">Проблема</span>
+              <p>Мастер работала только по сарафанному радио. Новые клиенты не могли её найти — Instagram не давал результата, ссылки на запись не было.</p>
+            </div>
+            <div class="case-block">
+              <span class="case-block-label">Решение</span>
+              <p>Сделал сайт-визитку с кнопкой записи в Telegram. Подключил автоответ, чтобы заявки не терялись. Запустили за 5 дней.</p>
+            </div>
             <div class="case-metrics">
               <div class="metric">
                 <span class="metric-value" data-target="5">0</span>
@@ -282,6 +276,7 @@
               <p>Раньше все клиенты только по знакомым. Теперь каждый день новые заявки в Telegram. Даже не ожидала такого результата за такое время!</p>
               <cite>— Люся, beauty-мастер</cite>
             </blockquote>
+            <a href="#" class="case-link">Смотреть сайт →</a>
           </div>
         </div>
 
@@ -307,10 +302,17 @@
             <div class="case-tags">
               <span class="badge">лендинг</span>
               <span class="badge">авто</span>
-              <span class="badge">заявки</span>
+              <span class="badge">Romma</span>
             </div>
             <h3>Связка с захватом лидов</h3>
-            <p class="case-desc">Автосервис тратил деньги на рекламу, но звонков почти не было. Сайта не было — только страница ВКонтакте. Клиенты уходили к конкурентам.</p>
+            <div class="case-block">
+              <span class="case-block-label">Проблема</span>
+              <p>Автосервис тратил деньги на рекламу, но звонков почти не было. Сайта не было — только страница ВКонтакте. Клиенты уходили к конкурентам.</p>
+            </div>
+            <div class="case-block">
+              <span class="case-block-label">Решение</span>
+              <p>Сделал лендинг с формой захвата лидов и интеграцией с Telegram. Заявки приходят в чат — клиент отвечает за минуты. Реклама окупилась за 2 недели.</p>
+            </div>
             <div class="case-metrics">
               <div class="metric">
                 <span class="metric-value" data-target="2">0</span>
@@ -329,6 +331,7 @@
               <p>Делал рекламу раньше без сайта — пустая трата денег. После запуска лендинга заявки пошли сразу. Рекомендую, если хотите результат, а не просто красивую страницу.</p>
               <cite>— Дмитрий, владелец Romma</cite>
             </blockquote>
+            <a href="#" class="case-link">Смотреть сайт →</a>
           </div>
         </div>
       </div>
@@ -424,22 +427,26 @@
         </div>
       </div>
     </section>
-    <div class="divider divider--wave" style="--fill: #141414; --from: #111008; background: #111008;">
+    <div class="divider divider--wave" style="--fill: #0A0A0A; --from: #111008; background: #111008;">
       <svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false">
         <path d="M0,26 C120,52 240,52 360,34 C480,16 600,12 720,30 C840,48 960,56 1080,40 C1200,24 1320,12 1440,28 L1440,80 L0,80 Z" fill="var(--fill)"></path>
       </svg>
     </div>
 
     <section id="pricing">
-      <div class="container">
-        <div class="section-header section-header--center reveal">
-          <span class="section-label">ЦЕНЫ</span>
-          <h2>Прозрачные цены без сюрпризов</h2>
-          <p class="section-sub">Выберите подходящий пакет — чем больше нам сайт — тем лучше результат</p>
-        </div>
-        <div class="pricing-grid">
+      <div class="pricing-stage">
+        <div class="pricing-stage__grid" aria-hidden="true"></div>
+        <div class="pricing-stage__sparkles" aria-hidden="true"></div>
+        <div class="pricing-stage__glow" aria-hidden="true"></div>
+        <div class="container">
+          <div class="section-header section-header--center reveal">
+            <span class="section-label">ЦЕНЫ</span>
+            <h2 data-words-reveal>Прозрачные цены без сюрпризов</h2>
+            <p class="section-sub">Выберите подходящий пакет — чем больше нам сайт — тем лучше результат</p>
+          </div>
+          <div class="pricing-grid">
 
-          <div class="card pricing-card reveal">
+          <div class="card pricing-card reveal" style="--reveal-delay: 0.05s;">
             <h3 class="pricing-name">Старт</h3>
             <div class="pricing-price">от 10 000 <span class="pricing-currency">₽</span></div>
             <ul class="pricing-features">
@@ -452,7 +459,7 @@
             <a href="https://t.me/devbymax" class="btn btn-ghost btn-full">Выбрать</a>
           </div>
 
-          <div class="card pricing-card pricing-card--popular reveal">
+          <div class="card pricing-card pricing-card--popular is-popular reveal" style="--reveal-delay: 0.15s;">
             <span class="pricing-badge">Популярный</span>
             <h3 class="pricing-name">Бизнес</h3>
             <div class="pricing-price">от 15 000 <span class="pricing-currency">₽</span></div>
@@ -468,7 +475,7 @@
             <a href="https://t.me/devbymax" class="btn btn-primary btn-full">Выбрать</a>
           </div>
 
-          <div class="card pricing-card reveal">
+          <div class="card pricing-card reveal" style="--reveal-delay: 0.25s;">
             <h3 class="pricing-name">Про</h3>
             <div class="pricing-price">от 25 000 <span class="pricing-currency">₽</span></div>
             <ul class="pricing-features">
@@ -482,13 +489,17 @@
             <a href="https://t.me/devbymax" class="btn btn-ghost btn-full">Выбрать</a>
           </div>
 
+          </div>
         </div>
       </div>
     </section>
-    <div class="divider divider--angle" style="--fill: #0A0A0A; --from: #141414;">
-      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-        <path d="M0,8 L1440,60 L1440,0 L0,0 Z" fill="var(--fill)"></path>
-      </svg>
+    <div class="section-transition" aria-hidden="true">
+      <div class="section-transition__rule">
+        <span class="section-transition__line"></span>
+        <span class="section-transition__dot"></span>
+        <span class="section-transition__line"></span>
+      </div>
+      <span class="section-transition__label">Остались вопросы?</span>
     </div>
 
     <section id="faq">

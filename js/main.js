@@ -34,20 +34,53 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!prefersReducedMotion) {
+    var wordsRevealHeadings = document.querySelectorAll('[data-words-reveal]');
+    wordsRevealHeadings.forEach(function (heading) {
+      var text = heading.textContent;
+      if (!text) return;
+      var words = text.trim().split(/\s+/);
+      if (!words.length) return;
+      heading.textContent = '';
+      words.forEach(function (word, index) {
+        var outer = document.createElement('span');
+        var inner = document.createElement('span');
+        outer.className = 'word';
+        inner.textContent = word;
+        inner.style.setProperty('--word-delay', (index * 0.08) + 's');
+        outer.appendChild(inner);
+        heading.appendChild(outer);
+      });
+    });
+  }
+
   var revealElements = document.querySelectorAll('.reveal');
   var revealObserver = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
         var el = entry.target;
-        var parent = el.parentElement;
-        if (parent) {
-          var siblings = parent.querySelectorAll(':scope > .reveal');
-          var index = Array.prototype.indexOf.call(siblings, el);
-          if (index > 0) {
-            el.style.transitionDelay = (index * 0.1) + 's';
+        var explicitDelay = getComputedStyle(el).getPropertyValue('--reveal-delay').trim();
+        if (explicitDelay) {
+          el.style.transitionDelay = explicitDelay;
+        } else {
+          var parent = el.parentElement;
+          if (parent) {
+            var siblings = parent.querySelectorAll(':scope > .reveal');
+            var index = Array.prototype.indexOf.call(siblings, el);
+            if (index > 0) {
+              el.style.transitionDelay = (index * 0.1) + 's';
+            }
           }
         }
         el.classList.add('visible');
+        if (el.matches('[data-words-reveal]')) {
+          el.classList.add('is-revealed');
+        }
+        var revealHeading = el.querySelector('[data-words-reveal]');
+        if (revealHeading) {
+          revealHeading.classList.add('is-revealed');
+        }
         revealObserver.unobserve(el);
       }
     });

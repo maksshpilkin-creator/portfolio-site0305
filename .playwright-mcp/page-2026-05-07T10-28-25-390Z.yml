@@ -1,0 +1,382 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "devbymax" [ref=e4] [cursor=pointer]:
+        - /url: "#"
+      - navigation [ref=e5]:
+        - link "Услуги" [ref=e6] [cursor=pointer]:
+          - /url: "#services"
+        - link "Проекты" [ref=e7] [cursor=pointer]:
+          - /url: "#cases"
+        - link "Процесс" [ref=e8] [cursor=pointer]:
+          - /url: "#process"
+        - link "Цены" [ref=e9] [cursor=pointer]:
+          - /url: "#pricing"
+        - link "FAQ" [ref=e10] [cursor=pointer]:
+          - /url: "#faq"
+      - link "Напишите в TG →" [ref=e11] [cursor=pointer]:
+        - /url: https://t.me/devbymax
+  - main [ref=e12]:
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]: ВЕБ-РАЗРАБОТКА ДЛЯ БИЗНЕСА
+        - heading "Делаю сайты, которые приводят клиентов вашему бизнесу" [level=1] [ref=e17]
+        - paragraph [ref=e18]: Лендинги, сайты-визитки и автоматизация заявок для кафе, салонов и магазинов. Под ключ за 5–7 дней.
+        - generic [ref=e19]:
+          - link "Обсудить проект →" [ref=e20] [cursor=pointer]:
+            - /url: https://t.me/devbymax
+          - link "Смотреть работы →" [ref=e21] [cursor=pointer]:
+            - /url: "#cases"
+        - generic [ref=e22]:
+          - generic [ref=e23]: ★★★★★
+          - generic [ref=e24]: 15+ довольных клиентов
+      - generic [ref=e25]:
+        - generic [ref=e32]: devbymax.com
+        - generic [ref=e42]: 🔥 15 заявок за первый месяц
+    - img [ref=e44]
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - generic [ref=e49]: Лендинги под ключ
+        - generic [ref=e50]: ★
+        - generic [ref=e51]: Сайт за 5–7 дней
+        - generic [ref=e52]: ★
+        - generic [ref=e53]: Интеграция Telegram
+        - generic [ref=e54]: ★
+        - generic [ref=e55]: SEO-оптимизация
+        - generic [ref=e56]: ★
+      - generic [ref=e57]:
+        - generic [ref=e58]: Лендинги под ключ
+        - generic [ref=e59]: ★
+        - generic [ref=e60]: Сайт за 5–7 дней
+        - generic [ref=e61]: ★
+        - generic [ref=e62]: Интеграция Telegram
+        - generic [ref=e63]: ★
+        - generic [ref=e64]: SEO-оптимизация
+        - generic [ref=e65]: ★
+    - generic [ref=e67]:
+      - generic [ref=e68]:
+        - generic [ref=e69]: ПОЧЕМУ БЕЗ САЙТА — ПЛОХО
+        - heading "Ваш бизнес теряет клиентов без сайта" [level=2] [ref=e70]
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e73]: 🔍
+          - heading "Клиенты не находят вас" [level=3] [ref=e74]
+          - paragraph [ref=e75]: Ищут услуги в Google, но — они уходят к конкуренту, у которого есть сайт.
+        - generic [ref=e76]:
+          - generic [ref=e77]: 💬
+          - heading "Нет удобного способа связаться" [level=3] [ref=e78]
+          - paragraph [ref=e79]: Клиент хочет написать вам что-нибудь, но не знает как. Уходит к тому, у кого есть сайт.
+        - generic [ref=e80]:
+          - generic [ref=e81]: 😰
+          - heading "Страшно начать" [level=3] [ref=e82]
+          - paragraph [ref=e83]: Кажется, что делать сайт долго, дорого, и непонятно. Но это не так — я помогаю сделать это просто.
+      - paragraph [ref=e84]:
+        - generic [ref=e85]: Я решаю все три проблемы.
+        - generic [ref=e86]: Быстро, понятно и без головной боли.
+    - img [ref=e88]
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - generic [ref=e93]: УСЛУГИ
+        - heading "Что я делаю" [level=2] [ref=e94]
+        - paragraph [ref=e95]: Каждый сайт — это инструмент который работает для вашего бизнеса, а не просто красивая страница
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - generic [ref=e99]: Лендинг
+            - generic [ref=e100]: от 10 000 ₽
+          - heading "🚀 Лендинг" [level=3] [ref=e101]:
+            - generic [ref=e102]: 🚀
+            - text: Лендинг
+          - paragraph [ref=e103]: Профессиональный продающий сайт для услуги или товара. Разработка, адаптив, анимации.
+          - generic [ref=e104]:
+            - generic [ref=e105]: разработка
+            - generic [ref=e106]: адаптив
+            - generic [ref=e107]: анимации
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - generic [ref=e110]: Визитка
+            - generic [ref=e111]: от 10 000 ₽
+          - heading "📋 Сайт-визитка" [level=3] [ref=e112]:
+            - generic [ref=e113]: 📋
+            - text: Сайт-визитка
+          - paragraph [ref=e114]: Быстрый сайт для представления вас или вашего бизнеса. Имя, контакты, услуги.
+          - generic [ref=e115]:
+            - generic [ref=e116]: имя
+            - generic [ref=e117]: контакты
+            - generic [ref=e118]: услуги
+        - generic [ref=e119]:
+          - generic [ref=e120]:
+            - generic [ref=e121]: Автоматизация
+            - generic [ref=e122]: от 15 000 ₽
+          - heading "⚙️ Сайт + автоматизация" [level=3] [ref=e123]:
+            - generic [ref=e124]: ⚙️
+            - text: Сайт + автоматизация
+          - paragraph [ref=e125]: Интеграция с Telegram, создание автоответов и воронки заявок.
+          - generic [ref=e126]:
+            - generic [ref=e127]: telegram
+            - generic [ref=e128]: автоответ
+            - generic [ref=e129]: воронка
+        - generic [ref=e130]:
+          - generic [ref=e131]:
+            - generic [ref=e132]: Интерактив
+            - generic [ref=e133]: от 10 000 ₽
+          - heading "🎯 Квиз / опрос" [level=3] [ref=e134]:
+            - generic [ref=e135]: 🎯
+            - text: Квиз / опрос
+          - paragraph [ref=e136]: Интерактивный опрос для сбора лидов. Результаты приходят в Telegram.
+          - generic [ref=e137]:
+            - generic [ref=e138]: квиз
+            - generic [ref=e139]: лиды
+            - generic [ref=e140]: telegram
+    - generic [ref=e143]:
+      - generic [ref=e144]:
+        - generic [ref=e145]: КЕЙС ПРОЕКТ
+        - heading "Работы, которые приносят клиентов" [level=2] [ref=e146]
+      - generic [ref=e160]:
+        - generic [ref=e161]:
+          - generic [ref=e162]: визитка
+          - generic [ref=e163]: beauty
+          - generic [ref=e164]: Люся
+        - heading "Сайт для beauty-мастера" [level=3] [ref=e165]
+        - generic [ref=e166]:
+          - generic [ref=e167]: Проблема
+          - paragraph [ref=e168]: Мастер работала только по сарафанному радио. Новые клиенты не могли её найти — Instagram не давал результата, ссылки на запись не было.
+        - generic [ref=e169]:
+          - generic [ref=e170]: Решение
+          - paragraph [ref=e171]: Сделал сайт-визитку с кнопкой записи в Telegram. Подключил автоответ, чтобы заявки не терялись. Запустили за 5 дней.
+        - generic [ref=e172]:
+          - generic [ref=e173]:
+            - generic [ref=e174]: "0"
+            - generic [ref=e175]: дней на запуск
+          - generic [ref=e176]:
+            - generic [ref=e177]: "0"
+            - generic [ref=e178]: лидов за месяц
+          - generic [ref=e179]:
+            - generic [ref=e180]: "0"
+            - generic [ref=e181]: новых клиентов
+        - blockquote [ref=e182]:
+          - paragraph [ref=e183]: Раньше все клиенты только по знакомым. Теперь каждый день новые заявки в Telegram. Даже не ожидала такого результата за такое время!
+          - text: — Люся, beauty-мастер
+        - link "Смотреть сайт →" [ref=e184] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=e198]:
+        - generic [ref=e199]:
+          - generic [ref=e200]: лендинг
+          - generic [ref=e201]: авто
+          - generic [ref=e202]: Romma
+        - heading "Связка с захватом лидов" [level=3] [ref=e203]
+        - generic [ref=e204]:
+          - generic [ref=e205]: Проблема
+          - paragraph [ref=e206]: Автосервис тратил деньги на рекламу, но звонков почти не было. Сайта не было — только страница ВКонтакте. Клиенты уходили к конкурентам.
+        - generic [ref=e207]:
+          - generic [ref=e208]: Решение
+          - paragraph [ref=e209]: Сделал лендинг с формой захвата лидов и интеграцией с Telegram. Заявки приходят в чат — клиент отвечает за минуты. Реклама окупилась за 2 недели.
+        - generic [ref=e210]:
+          - generic [ref=e211]:
+            - generic [ref=e212]: "0"
+            - generic [ref=e213]: дней на запуск
+          - generic [ref=e214]:
+            - generic [ref=e215]: "0"
+            - generic [ref=e216]: заявок за месяц
+          - generic [ref=e217]:
+            - generic [ref=e218]: "0"
+            - generic [ref=e219]: новых клиентов
+        - blockquote [ref=e220]:
+          - paragraph [ref=e221]: Делал рекламу раньше без сайта — пустая трата денег. После запуска лендинга заявки пошли сразу. Рекомендую, если хотите результат, а не просто красивую страницу.
+          - text: — Дмитрий, владелец Romma
+        - link "Смотреть сайт →" [ref=e222] [cursor=pointer]:
+          - /url: "#"
+    - img [ref=e224]
+    - generic [ref=e228]:
+      - generic [ref=e229]:
+        - generic [ref=e230]: "0"
+        - generic [ref=e231]: проектов выполнено
+      - generic [ref=e232]:
+        - generic [ref=e233]: "0"
+        - generic [ref=e234]: дней — средний срок
+      - generic [ref=e235]:
+        - generic [ref=e236]: "0"
+        - generic [ref=e237]: лидов — рекорд за месяц
+      - generic [ref=e238]:
+        - generic [ref=e239]: "0"
+        - generic [ref=e240]: баллов PageSpeed
+    - img [ref=e242]
+    - generic [ref=e245]:
+      - generic [ref=e246]:
+        - generic [ref=e247]: ПРОЦЕСС
+        - heading "Как мы будем работать" [level=2] [ref=e248]
+        - paragraph [ref=e249]: От первого сообщения до готового сайта — всего 5 шагов
+      - generic [ref=e250]:
+        - generic [ref=e252]:
+          - generic [ref=e253]: "1"
+          - generic [ref=e254]:
+            - generic [ref=e255]: День 1
+            - heading "Бриф" [level=3] [ref=e256]
+            - paragraph [ref=e257]: Созваниваемся или переписываемся в Telegram. Я узнаю про ваш бизнес, цели, дизайн, цены. Займёт 30 минут.
+        - generic [ref=e258]:
+          - generic [ref=e259]: "2"
+          - generic [ref=e260]:
+            - generic [ref=e261]: День 2
+            - heading "Макет" [level=3] [ref=e262]
+            - paragraph [ref=e263]: Создаю прототип сайта в Figma. Вы видите структуру до начала разработки. Правки — пожалуйста.
+        - generic [ref=e264]:
+          - generic [ref=e265]: "3"
+          - generic [ref=e266]:
+            - generic [ref=e267]: День 3–4
+            - heading "Разработка" [level=3] [ref=e268]
+            - paragraph [ref=e269]: "Верстаю сайт: HTML, CSS, анимации. Полный адаптив под все устройства. Вы видите прогресс каждый день."
+        - generic [ref=e270]:
+          - generic [ref=e271]: "4"
+          - generic [ref=e272]:
+            - generic [ref=e273]: День 5
+            - heading "Правки" [level=3] [ref=e274]
+            - paragraph [ref=e275]: Вношу до 3 раундов правок без доплат. Всё фиксируем в Telegram — быстро и по делу.
+        - generic [ref=e276]:
+          - generic [ref=e277]: "5"
+          - generic [ref=e278]:
+            - generic [ref=e279]: День 6–7
+            - heading "Запуск" [level=3] [ref=e280]
+            - paragraph [ref=e281]: Подключаю домен и хостинг, настраиваю форму и аналитику. Сайт живёт. Остаюсь на связи.
+    - img [ref=e283]
+    - generic [ref=e286]:
+      - generic [ref=e287]:
+        - generic [ref=e288]: ЦЕНЫ
+        - heading "Прозрачные цены без сюрпризов" [level=2] [ref=e289]
+        - paragraph [ref=e290]: Выберите подходящий пакет — чем больше нам сайт — тем лучше результат
+      - generic [ref=e291]:
+        - generic [ref=e292]:
+          - heading "Старт" [level=3] [ref=e293]
+          - generic [ref=e294]: от 10 000 ₽
+          - list [ref=e295]:
+            - listitem [ref=e296]:
+              - generic [ref=e297]: ✓
+              - text: Сайт-визитка с описанием услуг
+            - listitem [ref=e298]:
+              - generic [ref=e299]: ✓
+              - text: Адаптив под все устройства
+            - listitem [ref=e300]:
+              - generic [ref=e301]: ✓
+              - text: Базовая SEO настройка
+            - listitem [ref=e302]:
+              - generic [ref=e303]: ✓
+              - text: Дизайн на основе готового шаблона
+            - listitem [ref=e304]:
+              - generic [ref=e305]: ✓
+              - text: Готово за 3–5 дней
+          - link "Выбрать" [ref=e306] [cursor=pointer]:
+            - /url: https://t.me/devbymax
+        - generic [ref=e307]:
+          - generic [ref=e308]: Популярный
+          - heading "Бизнес" [level=3] [ref=e309]
+          - generic [ref=e310]: от 15 000 ₽
+          - list [ref=e311]:
+            - listitem [ref=e312]:
+              - generic [ref=e313]: ✓
+              - text: Лендинг до 5 разделов
+            - listitem [ref=e314]:
+              - generic [ref=e315]: ✓
+              - text: Форма обратной связи + Telegram уведомления
+            - listitem [ref=e316]:
+              - generic [ref=e317]: ✓
+              - text: Анимации и интерактивный дизайн
+            - listitem [ref=e318]:
+              - generic [ref=e319]: ✓
+              - text: Интеграция с CRM или таблицами
+            - listitem [ref=e320]:
+              - generic [ref=e321]: ✓
+              - text: Google Analytics подключение
+            - listitem [ref=e322]:
+              - generic [ref=e323]: ✓
+              - text: SEO оптимизация
+            - listitem [ref=e324]:
+              - generic [ref=e325]: ✓
+              - text: Готово за 5–7 дней после оплаты
+          - link "Выбрать" [ref=e326] [cursor=pointer]:
+            - /url: https://t.me/devbymax
+        - generic [ref=e327]:
+          - heading "Про" [level=3] [ref=e328]
+          - generic [ref=e329]: от 25 000 ₽
+          - list [ref=e330]:
+            - listitem [ref=e331]:
+              - generic [ref=e332]: ✓
+              - text: Всё из пакета Бизнес
+            - listitem [ref=e333]:
+              - generic [ref=e334]: ✓
+              - text: Многостраничный сайт — до 10+ страниц
+            - listitem [ref=e335]:
+              - generic [ref=e336]: ✓
+              - text: Сложный функционал и автоматизация
+            - listitem [ref=e337]:
+              - generic [ref=e338]: ✓
+              - text: Личный кабинет или каталог
+            - listitem [ref=e339]:
+              - generic [ref=e340]: ✓
+              - text: A/B тестирование
+            - listitem [ref=e341]:
+              - generic [ref=e342]: ✓
+              - text: Приоритет в очереди
+          - link "Выбрать" [ref=e343] [cursor=pointer]:
+            - /url: https://t.me/devbymax
+    - img [ref=e345]
+    - generic [ref=e348]:
+      - generic [ref=e349]:
+        - generic [ref=e350]: FAQ
+        - heading "Частые вопросы" [level=2] [ref=e351]
+      - generic [ref=e352]:
+        - generic [ref=e353]:
+          - button "Сколько стоит сайт? +" [ref=e354] [cursor=pointer]:
+            - generic [ref=e355]: Сколько стоит сайт?
+            - generic [ref=e356]: +
+          - paragraph [ref=e357]: Стоимость зависит от объёма и функционала. Лендинг — от 15 000 ₽, сайт-визитка — от 10 000 ₽, сложные проекты — от 25 000 ₽. Точную цену скажу после короткого брифа.
+        - generic [ref=e358]:
+          - button "Сколько времени займёт разработка? +" [ref=e359] [cursor=pointer]:
+            - generic [ref=e360]: Сколько времени займёт разработка?
+            - generic [ref=e361]: +
+          - paragraph [ref=e362]: Обычно от 5 до 7 дней. Срочные проекты — от 2 дней. Точные сроки зависят от сложности и скорости обратной связи с вашей стороны.
+        - generic [ref=e363]:
+          - button "Вы делаете сайты под ключ или только дизайн? +" [ref=e364] [cursor=pointer]:
+            - generic [ref=e365]: Вы делаете сайты под ключ или только дизайн?
+            - generic [ref=e366]: +
+          - paragraph [ref=e367]: "Полностью под ключ: дизайн, вёрстка, анимации, адаптив, подключение домена и хостинга. Отдельно дизайн не продаю."
+        - generic [ref=e368]:
+          - button "Что нужно от меня для старта? +" [ref=e369] [cursor=pointer]:
+            - generic [ref=e370]: Что нужно от меня для старта?
+            - generic [ref=e371]: +
+          - paragraph [ref=e372]: Только 30 минут вашего времени на бриф в Telegram. Я задам вопросы про бизнес, цели и стиль — остальное беру на себя.
+        - generic [ref=e373]:
+          - button "Вы делаете правки после сдачи? +" [ref=e374] [cursor=pointer]:
+            - generic [ref=e375]: Вы делаете правки после сдачи?
+            - generic [ref=e376]: +
+          - paragraph [ref=e377]: Да. Включено до 3 раундов правок до финальной сдачи. После запуска — поддержка 2 недели бесплатно.
+        - generic [ref=e378]:
+          - button "Какие сферы бизнеса вы обслуживаете? +" [ref=e379] [cursor=pointer]:
+            - generic [ref=e380]: Какие сферы бизнеса вы обслуживаете?
+            - generic [ref=e381]: +
+          - paragraph [ref=e382]: Кафе, рестораны, салоны красоты, барбершопы, автосервисы, магазины, мастера услуг — любой малый бизнес, которому нужны клиенты из интернета.
+    - img [ref=e384]
+    - generic [ref=e388]:
+      - heading "Напишите мне — и через 7 дней у вас будет сайт" [level=2] [ref=e389]
+      - paragraph [ref=e390]: Расскажите про ваш бизнес — отвечу в течение часа и предложу решение.
+      - link "Написать в Telegram →" [ref=e391] [cursor=pointer]:
+        - /url: https://t.me/devbymax
+    - img [ref=e393]
+  - contentinfo [ref=e395]:
+    - generic [ref=e396]:
+      - generic [ref=e397]:
+        - generic [ref=e398]:
+          - link "devbymax" [ref=e399] [cursor=pointer]:
+            - /url: "#"
+          - paragraph [ref=e400]: Веб-разработка для малого бизнеса
+        - navigation [ref=e401]:
+          - link "Услуги" [ref=e402] [cursor=pointer]:
+            - /url: "#services"
+          - link "Цены" [ref=e403] [cursor=pointer]:
+            - /url: "#pricing"
+          - link "Проекты" [ref=e404] [cursor=pointer]:
+            - /url: "#cases"
+          - link "Связь" [ref=e405] [cursor=pointer]:
+            - /url: "#cta"
+      - generic [ref=e406]:
+        - generic [ref=e407]: © 2026 devbymax. Все права защищены.
+        - link "Политика конфиденциальности" [ref=e408] [cursor=pointer]:
+          - /url: "#"
