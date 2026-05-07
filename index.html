@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://devbymax.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230A0A0A'/><circle cx='16' cy='16' r='10' fill='none' stroke='%23C8A96E' stroke-width='3'/><rect x='19' y='6' width='3' height='20' fill='%23C8A96E'/></svg>">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -47,51 +47,35 @@
   <main>
 
     <section id="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <span class="section-label">ВЕБ-РАЗРАБОТКА ДЛЯ БИЗНЕСА</span>
-          <h1>Делаю сайты, которые <span class="accent">приводят клиентов</span> вашему бизнесу</h1>
+      <div class="hero-lamp" aria-hidden="true">
+        <div class="hero-lamp__veil"></div>
+        <div class="hero-lamp__orb"></div>
+        <div class="hero-lamp__beam"></div>
+        <div class="hero-lamp__line"></div>
+        <div class="hero-lamp__cone hero-lamp__cone--left">
+          <span class="hero-lamp__cone-mask hero-lamp__cone-mask--bottom"></span>
+          <span class="hero-lamp__cone-mask hero-lamp__cone-mask--left"></span>
+        </div>
+        <div class="hero-lamp__cone hero-lamp__cone--right">
+          <span class="hero-lamp__cone-mask hero-lamp__cone-mask--bottom"></span>
+          <span class="hero-lamp__cone-mask hero-lamp__cone-mask--right"></span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="hero-content hero-content--lamp">
+          <h1>
+            <span class="hero-line-muted">Делаю сайты, которые</span>
+            <span class="accent">приводят клиентов</span>
+            <span class="hero-line-strong">вашему бизнесу</span>
+          </h1>
           <p class="hero-sub">Лендинги, сайты-визитки и автоматизация заявок для кафе, салонов и магазинов. Под ключ за 5–7 дней.</p>
           <div class="hero-cta-row">
             <a href="https://t.me/devbymax" class="btn btn-primary">Обсудить проект →</a>
             <a href="#cases" class="btn btn-ghost">Смотреть работы →</a>
           </div>
-          <div class="trust-line">
-            <span class="stars">★★★★★</span>
-            <span>15+ довольных клиентов</span>
-          </div>
-        </div>
-        <div class="hero-mockup">
-          <div class="browser-mockup">
-            <div class="browser-chrome">
-              <div class="browser-dots">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-yellow"></span>
-                <span class="dot dot-green"></span>
-              </div>
-              <div class="browser-url">devbymax.com</div>
-            </div>
-            <div class="browser-content">
-              <div class="mock-line mock-line--w60"></div>
-              <div class="mock-line mock-line--w80"></div>
-              <div class="mock-line mock-line--w40"></div>
-              <div class="mock-grid">
-                <div class="mock-card"></div>
-                <div class="mock-card"></div>
-              </div>
-              <div class="mock-line mock-line--w70"></div>
-              <div class="mock-line mock-line--w50"></div>
-            </div>
-          </div>
-          <div class="floating-badge">🔥 15 заявок за первый месяц</div>
         </div>
       </div>
     </section>
-    <div class="divider divider--wave" style="--fill: #0D0D0D; --from: #0A0A0A; background: #0A0A0A;">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-        <path d="M0,26 C120,52 240,52 360,34 C480,16 600,12 720,30 C840,48 960,56 1080,40 C1200,24 1320,12 1440,28 L1440,80 L0,80 Z" fill="var(--fill)"></path>
-      </svg>
-    </div>
 
     <section id="marquee">
       <div class="marquee-track" aria-hidden="true">
@@ -120,103 +104,101 @@
 
     <section id="problems">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">ПОЧЕМУ БЕЗ САЙТА — ПЛОХО</span>
-          <h2>Ваш бизнес теряет клиентов без сайта</h2>
+        <div class="section-panel">
+          <div class="section-header reveal">
+            <span class="section-label">ПОЧЕМУ БЕЗ САЙТА — ПЛОХО</span>
+            <h2>Ваш бизнес теряет клиентов без сайта</h2>
+          </div>
+          <div class="problems-grid">
+            <div class="card reveal">
+              <span class="card-icon">🔍</span>
+              <h3>Клиенты не находят вас</h3>
+              <p>Ищут услуги в Google, но — они уходят к конкуренту, у которого есть сайт.</p>
+            </div>
+            <div class="card reveal">
+              <span class="card-icon">💬</span>
+              <h3>Нет удобного способа связаться</h3>
+              <p>Клиент хочет написать вам что-нибудь, но не знает как. Уходит к тому, у кого есть сайт.</p>
+            </div>
+            <div class="card reveal">
+              <span class="card-icon">😰</span>
+              <h3>Страшно начать</h3>
+              <p>Кажется, что делать сайт долго, дорого, и непонятно. Но это не так — я помогаю сделать это просто.</p>
+            </div>
+          </div>
+          <p class="resolution-line reveal">
+            <span class="resolution-line__lead">Я решаю все три проблемы.</span>
+            <span class="resolution-line__accent">Быстро, понятно и без головной боли.</span>
+          </p>
         </div>
-        <div class="problems-grid">
-          <div class="card reveal">
-            <span class="card-icon">🔍</span>
-            <h3>Клиенты не находят вас</h3>
-            <p>Ищут услуги в Google, но — они уходят к конкуренту, у которого есть сайт.</p>
-          </div>
-          <div class="card reveal">
-            <span class="card-icon">💬</span>
-            <h3>Нет удобного способа связаться</h3>
-            <p>Клиент хочет написать вам что-нибудь, но не знает как. Уходит к тому, у кого есть сайт.</p>
-          </div>
-          <div class="card reveal">
-            <span class="card-icon">😰</span>
-            <h3>Страшно начать</h3>
-            <p>Кажется, что делать сайт долго, дорого, и непонятно. Но это не так — я помогаю сделать это просто.</p>
-          </div>
-        </div>
-        <p class="resolution-line reveal">
-          <span class="resolution-line__lead">Я решаю все три проблемы.</span>
-          <span class="resolution-line__accent">Быстро, понятно и без головной боли.</span>
-        </p>
       </div>
     </section>
-    <div class="divider divider--curve" style="--fill: #141414; --from: #0F0F0F; background: #0F0F0F;">
-      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-        <path d="M0,0 C360,96 1080,96 1440,0 L1440,100 L0,100 Z" fill="var(--fill)"></path>
-      </svg>
-    </div>
 
     <section id="services">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">УСЛУГИ</span>
-          <h2>Что я делаю</h2>
-          <p class="section-sub">Каждый сайт — это инструмент который работает для вашего бизнеса, а не просто красивая страница</p>
-        </div>
-        <div class="services-grid">
-          <div class="card service-card reveal">
-            <div class="service-card-top">
-              <span class="badge">Лендинг</span>
-              <span class="service-tag">от 10 000 ₽</span>
-            </div>
-            <h3><span class="service-emoji">🚀</span>Лендинг</h3>
-            <p>Профессиональный продающий сайт для услуги или товара. Разработка, адаптив, анимации.</p>
-            <div class="service-tags">
-              <span class="badge">разработка</span>
-              <span class="badge">адаптив</span>
-              <span class="badge">анимации</span>
-            </div>
+        <div class="section-panel">
+          <div class="section-header reveal">
+            <span class="section-label">УСЛУГИ</span>
+            <h2>Что я делаю</h2>
+            <p class="section-sub">Каждый сайт — это инструмент который работает для вашего бизнеса, а не просто красивая страница</p>
           </div>
-          <div class="card service-card reveal">
-            <div class="service-card-top">
-              <span class="badge">Визитка</span>
-              <span class="service-tag">от 10 000 ₽</span>
+          <div class="services-grid">
+            <div class="card service-card reveal">
+              <div class="service-card-top">
+                <span class="badge">Лендинг</span>
+                <span class="service-tag">от 10 000 ₽</span>
+              </div>
+              <h3><span class="service-emoji">🚀</span>Лендинг</h3>
+              <p>Профессиональный продающий сайт для услуги или товара. Разработка, адаптив, анимации.</p>
+              <div class="service-tags">
+                <span class="badge">разработка</span>
+                <span class="badge">адаптив</span>
+                <span class="badge">анимации</span>
+              </div>
             </div>
-            <h3><span class="service-emoji">📋</span>Сайт-визитка</h3>
-            <p>Быстрый сайт для представления вас или вашего бизнеса. Имя, контакты, услуги.</p>
-            <div class="service-tags">
-              <span class="badge">имя</span>
-              <span class="badge">контакты</span>
-              <span class="badge">услуги</span>
+            <div class="card service-card reveal">
+              <div class="service-card-top">
+                <span class="badge">Визитка</span>
+                <span class="service-tag">от 10 000 ₽</span>
+              </div>
+              <h3><span class="service-emoji">📋</span>Сайт-визитка</h3>
+              <p>Быстрый сайт для представления вас или вашего бизнеса. Имя, контакты, услуги.</p>
+              <div class="service-tags">
+                <span class="badge">имя</span>
+                <span class="badge">контакты</span>
+                <span class="badge">услуги</span>
+              </div>
             </div>
-          </div>
-          <div class="card service-card reveal">
-            <div class="service-card-top">
-              <span class="badge">Автоматизация</span>
-              <span class="service-tag">от 15 000 ₽</span>
+            <div class="card service-card reveal">
+              <div class="service-card-top">
+                <span class="badge">Автоматизация</span>
+                <span class="service-tag">от 15 000 ₽</span>
+              </div>
+              <h3><span class="service-emoji">⚙️</span>Сайт + автоматизация</h3>
+              <p>Интеграция с Telegram, создание автоответов и воронки заявок.</p>
+              <div class="service-tags">
+                <span class="badge">telegram</span>
+                <span class="badge">автоответ</span>
+                <span class="badge">воронка</span>
+              </div>
             </div>
-            <h3><span class="service-emoji">⚙️</span>Сайт + автоматизация</h3>
-            <p>Интеграция с Telegram, создание автоответов и воронки заявок.</p>
-            <div class="service-tags">
-              <span class="badge">telegram</span>
-              <span class="badge">автоответ</span>
-              <span class="badge">воронка</span>
-            </div>
-          </div>
-          <div class="card service-card reveal">
-            <div class="service-card-top">
-              <span class="badge">Интерактив</span>
-              <span class="service-tag">от 10 000 ₽</span>
-            </div>
-            <h3><span class="service-emoji">🎯</span>Квиз / опрос</h3>
-            <p>Интерактивный опрос для сбора лидов. Результаты приходят в Telegram.</p>
-            <div class="service-tags">
-              <span class="badge">квиз</span>
-              <span class="badge">лиды</span>
-              <span class="badge">telegram</span>
+            <div class="card service-card reveal">
+              <div class="service-card-top">
+                <span class="badge">Интерактив</span>
+                <span class="service-tag">от 10 000 ₽</span>
+              </div>
+              <h3><span class="service-emoji">🎯</span>Квиз / опрос</h3>
+              <p>Интерактивный опрос для сбора лидов. Результаты приходят в Telegram.</p>
+              <div class="service-tags">
+                <span class="badge">квиз</span>
+                <span class="badge">лиды</span>
+                <span class="badge">telegram</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <div class="divider divider--slice" aria-hidden="true"></div>
 
     <section id="cases">
       <div class="container">
@@ -336,11 +318,6 @@
         </div>
       </div>
     </section>
-    <div class="divider divider--angle" style="--fill: #0A0A0A; --from: #0A0A0A;">
-      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-        <path d="M0,8 L1440,60 L1440,0 L0,0 Z" fill="var(--fill)"></path>
-      </svg>
-    </div>
 
     <section id="stats">
       <div class="container">
@@ -364,151 +341,154 @@
         </div>
       </div>
     </section>
-    <div class="divider divider--curve" style="--fill: #111008; --from: #0A0A0A;">
-      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-        <path d="M0,0 C360,96 1080,96 1440,0 L1440,100 L0,100 Z" fill="var(--fill)"></path>
-      </svg>
-    </div>
 
     <section id="process">
       <div class="container">
-        <div class="section-header section-header--center reveal">
-          <span class="section-label">ПРОЦЕСС</span>
-          <h2>Как мы будем работать</h2>
-          <p class="section-sub">От первого сообщения до готового сайта — всего 5 шагов</p>
-        </div>
-        <div class="timeline">
-          <div class="timeline-line"></div>
-
-          <div class="timeline-step timeline-step--left reveal">
-            <div class="timeline-circle">1</div>
-            <div class="card timeline-card">
-              <span class="badge">День 1</span>
-              <h3>Бриф</h3>
-              <p>Созваниваемся или переписываемся в Telegram. Я узнаю про ваш бизнес, цели, дизайн, цены. Займёт 30 минут.</p>
-            </div>
+        <div class="section-panel">
+          <div class="section-header section-header--center reveal">
+            <span class="section-label">ПРОЦЕСС</span>
+            <h2>Как мы будем работать</h2>
+            <p class="section-sub">От первого сообщения до готового сайта — всего 5 шагов</p>
           </div>
+          <div class="timeline">
+            <article class="process-step reveal">
+              <span class="process-num">01</span>
+              <div class="process-body">
+                <span class="badge">День 1</span>
+                <h3>Бриф</h3>
+                <p>Созваниваемся или переписываемся в Telegram. Я узнаю про ваш бизнес, цели, дизайн, цены. Займёт 30 минут.</p>
+              </div>
+            </article>
 
-          <div class="timeline-step timeline-step--right reveal">
-            <div class="timeline-circle">2</div>
-            <div class="card timeline-card">
-              <span class="badge">День 2</span>
-              <h3>Макет</h3>
-              <p>Создаю прототип сайта в Figma. Вы видите структуру до начала разработки. Правки — пожалуйста.</p>
-            </div>
-          </div>
+            <article class="process-step reveal">
+              <span class="process-num">02</span>
+              <div class="process-body">
+                <span class="badge">День 2</span>
+                <h3>Макет</h3>
+                <p>Создаю прототип сайта в Figma. Вы видите структуру до начала разработки. Правки — пожалуйста.</p>
+              </div>
+            </article>
 
-          <div class="timeline-step timeline-step--left reveal">
-            <div class="timeline-circle">3</div>
-            <div class="card timeline-card">
-              <span class="badge">День 3–4</span>
-              <h3>Разработка</h3>
-              <p>Верстаю сайт: HTML, CSS, анимации. Полный адаптив под все устройства. Вы видите прогресс каждый день.</p>
-            </div>
-          </div>
+            <article class="process-step reveal">
+              <span class="process-num">03</span>
+              <div class="process-body">
+                <span class="badge">День 3–4</span>
+                <h3>Разработка</h3>
+                <p>Верстаю сайт: HTML, CSS, анимации. Полный адаптив под все устройства. Вы видите прогресс каждый день.</p>
+              </div>
+            </article>
 
-          <div class="timeline-step timeline-step--right reveal">
-            <div class="timeline-circle">4</div>
-            <div class="card timeline-card">
-              <span class="badge">День 5</span>
-              <h3>Правки</h3>
-              <p>Вношу до 3 раундов правок без доплат. Всё фиксируем в Telegram — быстро и по делу.</p>
-            </div>
-          </div>
+            <article class="process-step reveal">
+              <span class="process-num">04</span>
+              <div class="process-body">
+                <span class="badge">День 5</span>
+                <h3>Правки</h3>
+                <p>Вношу до 3 раундов правок без доплат. Всё фиксируем в Telegram — быстро и по делу.</p>
+              </div>
+            </article>
 
-          <div class="timeline-step timeline-step--left reveal">
-            <div class="timeline-circle">5</div>
-            <div class="card timeline-card">
-              <span class="badge">День 6–7</span>
-              <h3>Запуск</h3>
-              <p>Подключаю домен и хостинг, настраиваю форму и аналитику. Сайт живёт. Остаюсь на связи.</p>
-            </div>
+            <article class="process-step reveal">
+              <span class="process-num">05</span>
+              <div class="process-body">
+                <span class="badge">День 6–7</span>
+                <h3>Запуск</h3>
+                <p>Подключаю домен и хостинг, настраиваю форму и аналитику. Сайт живёт. Остаюсь на связи.</p>
+              </div>
+            </article>
           </div>
         </div>
       </div>
     </section>
-    <div class="divider divider--wave" style="--fill: #0A0A0A; --from: #111008; background: #111008;">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-        <path d="M0,26 C120,52 240,52 360,34 C480,16 600,12 720,30 C840,48 960,56 1080,40 C1200,24 1320,12 1440,28 L1440,80 L0,80 Z" fill="var(--fill)"></path>
-      </svg>
-    </div>
 
     <section id="pricing">
-      <div class="pricing-stage">
-        <div class="pricing-stage__grid" aria-hidden="true"></div>
-        <div class="pricing-stage__sparkles" aria-hidden="true"></div>
-        <div class="pricing-stage__glow" aria-hidden="true"></div>
-        <div class="container">
-          <div class="section-header section-header--center reveal">
-            <span class="section-label">ЦЕНЫ</span>
-            <h2 data-words-reveal>Прозрачные цены без сюрпризов</h2>
-            <p class="section-sub">Выберите подходящий пакет — чем больше нам сайт — тем лучше результат</p>
-          </div>
-          <div class="pricing-grid">
-
-          <div class="card pricing-card reveal" style="--reveal-delay: 0.05s;">
+      <div class="container section-panel pricing-panel">
+        <div class="pricing-background" aria-hidden="true">
+          <span class="pricing-background-grid"></span>
+          <span class="pricing-background-glow"></span>
+        </div>
+        <div class="section-header section-header--center reveal">
+          <span class="section-label">ЦЕНЫ</span>
+          <h2 data-words-reveal>Прозрачные цены без сюрпризов</h2>
+          <p class="section-sub">Выберите подходящий пакет — чем больше нам сайт, тем выше результат</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="card pricing-card pricing-delay-1 reveal">
             <h3 class="pricing-name">Старт</h3>
-            <div class="pricing-price">от 10 000 <span class="pricing-currency">₽</span></div>
+            <div class="pricing-price">
+              <span class="pricing-price-prefix">ОТ</span>
+              <span class="pricing-price-value">10 000</span>
+              <span class="pricing-currency">₽</span>
+            </div>
+            <p class="pricing-period-label">/месяц</p>
+            <div class="pricing-divider" aria-hidden="true"></div>
             <ul class="pricing-features">
-              <li><span class="check">✓</span> Сайт-визитка с описанием услуг</li>
-              <li><span class="check">✓</span> Адаптив под все устройства</li>
-              <li><span class="check">✓</span> Базовая SEO настройка</li>
-              <li><span class="check">✓</span> Дизайн на основе готового шаблона</li>
-              <li><span class="check">✓</span> Готово за 3–5 дней</li>
+              <li>Сайт-визитка с описанием услуг</li>
+              <li>Адаптив под все устройства</li>
+              <li>Базовая SEO настройка</li>
+              <li>Дизайн на основе готового шаблона</li>
+              <li>Готово за 3–5 дней</li>
             </ul>
             <a href="https://t.me/devbymax" class="btn btn-ghost btn-full">Выбрать</a>
-          </div>
+          </article>
 
-          <div class="card pricing-card pricing-card--popular is-popular reveal" style="--reveal-delay: 0.15s;">
+          <article class="card pricing-card pricing-card--featured pricing-card--popular is-popular pricing-delay-2 reveal">
             <span class="pricing-badge">Популярный</span>
             <h3 class="pricing-name">Бизнес</h3>
-            <div class="pricing-price">от 15 000 <span class="pricing-currency">₽</span></div>
+            <div class="pricing-price">
+              <span class="pricing-price-prefix">ОТ</span>
+              <span class="pricing-price-value">15 000</span>
+              <span class="pricing-currency">₽</span>
+            </div>
+            <p class="pricing-period-label">/месяц</p>
+            <div class="pricing-divider" aria-hidden="true"></div>
             <ul class="pricing-features">
-              <li><span class="check">✓</span> Лендинг до 5 разделов</li>
-              <li><span class="check">✓</span> Форма обратной связи + Telegram уведомления</li>
-              <li><span class="check">✓</span> Анимации и интерактивный дизайн</li>
-              <li><span class="check">✓</span> Интеграция с CRM или таблицами</li>
-              <li><span class="check">✓</span> Google Analytics подключение</li>
-              <li><span class="check">✓</span> SEO оптимизация</li>
-              <li><span class="check">✓</span> Готово за 5–7 дней после оплаты</li>
+              <li>Лендинг до 5 разделов</li>
+              <li>Форма обратной связи + Telegram уведомления</li>
+              <li>Анимации и интерактивный дизайн</li>
+              <li>Интеграция с CRM или таблицами</li>
+              <li>Google Analytics подключение</li>
+              <li>SEO оптимизация</li>
+              <li>Готово за 5–7 дней после оплаты</li>
             </ul>
             <a href="https://t.me/devbymax" class="btn btn-primary btn-full">Выбрать</a>
-          </div>
+          </article>
 
-          <div class="card pricing-card reveal" style="--reveal-delay: 0.25s;">
+          <article class="card pricing-card pricing-delay-3 reveal">
             <h3 class="pricing-name">Про</h3>
-            <div class="pricing-price">от 25 000 <span class="pricing-currency">₽</span></div>
+            <div class="pricing-price">
+              <span class="pricing-price-prefix">ОТ</span>
+              <span class="pricing-price-value">25 000</span>
+              <span class="pricing-currency">₽</span>
+            </div>
+            <p class="pricing-period-label">/месяц</p>
+            <div class="pricing-divider" aria-hidden="true"></div>
             <ul class="pricing-features">
-              <li><span class="check">✓</span> Всё из пакета Бизнес</li>
-              <li><span class="check">✓</span> Многостраничный сайт — до 10+ страниц</li>
-              <li><span class="check">✓</span> Сложный функционал и автоматизация</li>
-              <li><span class="check">✓</span> Личный кабинет или каталог</li>
-              <li><span class="check">✓</span> A/B тестирование</li>
-              <li><span class="check">✓</span> Приоритет в очереди</li>
+              <li>Всё из пакета Бизнес</li>
+              <li>Многостраничный сайт — до 10+ страниц</li>
+              <li>Сложный функционал и автоматизация</li>
+              <li>Личный кабинет или каталог</li>
+              <li>A/B тестирование</li>
+              <li>Приоритет в очереди</li>
             </ul>
             <a href="https://t.me/devbymax" class="btn btn-ghost btn-full">Выбрать</a>
-          </div>
-
-          </div>
+          </article>
         </div>
       </div>
     </section>
-    <div class="section-transition" aria-hidden="true">
-      <div class="section-transition__rule">
-        <span class="section-transition__line"></span>
-        <span class="section-transition__dot"></span>
-        <span class="section-transition__line"></span>
-      </div>
-      <span class="section-transition__label">Остались вопросы?</span>
+    <div class="section-bridge" aria-hidden="true">
+      <span class="section-bridge__line"></span>
+      <span class="section-bridge__dot"></span>
+      <span class="section-bridge__line"></span>
     </div>
 
     <section id="faq">
       <div class="container">
-        <div class="section-header section-header--center reveal">
-          <span class="section-label">FAQ</span>
-          <h2>Частые вопросы</h2>
-        </div>
-        <div class="faq-list">
+        <div class="section-panel">
+          <div class="section-header section-header--center reveal">
+            <span class="section-label">FAQ</span>
+            <h2>Частые вопросы</h2>
+          </div>
+          <div class="faq-list">
 
           <div class="faq-item reveal">
             <button class="faq-question" aria-expanded="false">
@@ -570,29 +550,23 @@
             </div>
           </div>
 
+          </div>
         </div>
       </div>
     </section>
-    <div class="divider divider--curve" style="--fill: #0D0B07; --from: #0A0A0A;">
-      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-        <path d="M0,0 C360,96 1080,96 1440,0 L1440,100 L0,100 Z" fill="var(--fill)"></path>
-      </svg>
-    </div>
 
     <section id="cta">
       <div class="container">
-        <div class="cta-block reveal">
-          <h2>Напишите мне — и через 7&nbsp;дней у&nbsp;вас будет сайт</h2>
-          <p class="cta-sub">Расскажите про ваш бизнес — отвечу в течение часа и предложу решение.</p>
-          <a href="https://t.me/devbymax" class="btn btn-primary btn-lg">Написать в Telegram →</a>
+        <div class="cta-panel">
+          <div class="cta-block reveal">
+            <div class="cta-icon" aria-hidden="true">🤝</div>
+            <h2>Напишите мне — и через 7&nbsp;дней у&nbsp;вас будет сайт</h2>
+            <p class="cta-sub">Расскажите про ваш бизнес — отвечу в течение часа и предложу решение.</p>
+            <a href="https://t.me/devbymax" class="btn btn-primary btn-lg">Написать в Telegram →</a>
+          </div>
         </div>
       </div>
     </section>
-    <div class="divider divider--wave" style="--fill: #050505; --from: #0D0B07; background: #0D0B07;">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-        <path d="M0,26 C120,52 240,52 360,34 C480,16 600,12 720,30 C840,48 960,56 1080,40 C1200,24 1320,12 1440,28 L1440,80 L0,80 Z" fill="var(--fill)"></path>
-      </svg>
-    </div>
 
   </main>
 
