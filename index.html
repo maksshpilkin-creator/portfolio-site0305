@@ -63,15 +63,32 @@
       </div>
       <div class="container">
         <div class="hero-content hero-content--lamp">
-          <h1>
-            <span class="hero-line-muted">Делаю сайты, которые</span>
-            <span class="accent">приводят клиентов</span>
-            <span class="hero-line-strong">вашему бизнесу</span>
-          </h1>
-          <p class="hero-sub">Лендинги, сайты-визитки и автоматизация заявок для кафе, салонов и магазинов. Под ключ за 5–7 дней.</p>
-          <div class="hero-cta-row">
-            <a href="https://t.me/devbymax" class="btn btn-primary">Обсудить проект →</a>
-            <a href="#cases" class="btn btn-ghost">Смотреть работы →</a>
+          <div class="hero-text">
+            <h1>
+              <span class="hero-line-muted">Делаю сайты, которые</span>
+              <span class="accent">приводят клиентов</span>
+              <span class="hero-line-strong">вашему бизнесу</span>
+            </h1>
+            <p class="hero-sub">Лендинги, сайты-визитки и автоматизация заявок для кафе, салонов и магазинов. Под ключ за 5–7 дней.</p>
+            <div class="hero-cta-row">
+              <a href="https://t.me/devbymax" class="btn btn-primary">Обсудить проект →</a>
+              <a href="#cases" class="btn btn-ghost">Смотреть работы →</a>
+            </div>
+          </div>
+          <div class="hero-mockup" aria-hidden="true">
+            <div class="browser-mockup">
+              <div class="browser-mockup__bar">
+                <div class="browser-mockup__dots">
+                  <span class="browser-mockup__dot browser-mockup__dot--red"></span>
+                  <span class="browser-mockup__dot browser-mockup__dot--yellow"></span>
+                  <span class="browser-mockup__dot browser-mockup__dot--green"></span>
+                </div>
+                <div class="browser-mockup__url"></div>
+              </div>
+              <div class="browser-mockup__screen">
+                <img src="refs2/screencapture-freelance-web-dev-sa-xbxy-bolt-host-2026-05-04-13_03_02 — копия.png" alt="Превью сайта" loading="lazy">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -111,24 +128,24 @@
           </div>
           <div class="problems-grid">
             <div class="card reveal">
-              <span class="card-icon">🔍</span>
-              <h3>Клиенты не находят вас</h3>
-              <p>Ищут услуги в Google, но — они уходят к конкуренту, у которого есть сайт.</p>
+              <span class="card-icon">📍</span>
+              <h3>Конкуренты в поиске — вас нет</h3>
+              <p>Клиент ищет в Google, находит другого и уходит. Без сайта вы невидимы там, где принимают решения.</p>
             </div>
             <div class="card reveal">
-              <span class="card-icon">💬</span>
-              <h3>Нет удобного способа связаться</h3>
-              <p>Клиент хочет написать вам что-нибудь, но не знает как. Уходит к тому, у кого есть сайт.</p>
+              <span class="card-icon">🚪</span>
+              <h3>Клиент зашёл, не понял — ушёл</h3>
+              <p>Страница в соцсети не объясняет что вы делаете, сколько стоит и как записаться. Он закрыл вкладку.</p>
             </div>
             <div class="card reveal">
-              <span class="card-icon">😰</span>
-              <h3>Страшно начать</h3>
-              <p>Кажется, что делать сайт долго, дорого, и непонятно. Но это не так — я помогаю сделать это просто.</p>
+              <span class="card-icon">📵</span>
+              <h3>Страница в соцсети — не продаёт</h3>
+              <p>Лента, алгоритмы, конкуренты в рекомендациях — всё мешает клиенту дойти до вас. Сайт работает без этого.</p>
             </div>
           </div>
           <p class="resolution-line reveal">
             <span class="resolution-line__lead">Я решаю все три проблемы.</span>
-            <span class="resolution-line__accent">Быстро, понятно и без головной боли.</span>
+            <span class="resolution-line__accent">Сайт под ключ — и клиенты находят вас сами.</span>
           </p>
         </div>
       </div>
@@ -143,9 +160,9 @@
             <p class="section-sub">Каждый сайт — это инструмент который работает для вашего бизнеса, а не просто красивая страница</p>
           </div>
           <div class="services-grid">
-            <div class="card service-card reveal">
+            <div class="card service-card service-card--featured reveal">
               <div class="service-card-top">
-                <span class="badge">Лендинг</span>
+                <span class="service-card-badge">⭐ Популярное</span>
                 <span class="service-tag">от 10 000 ₽</span>
               </div>
               <h3><span class="service-emoji">🚀</span>Лендинг</h3>
@@ -226,6 +243,10 @@
             </div>
           </div>
           <div class="case-content">
+            <div class="case-result">
+              <span class="case-result-metric">47 лидов</span>
+              <span class="case-result-context">за первый месяц после запуска</span>
+            </div>
             <div class="case-tags">
               <span class="badge">визитка</span>
               <span class="badge">beauty</span>
@@ -281,6 +302,10 @@
             </div>
           </div>
           <div class="case-content">
+            <div class="case-result">
+              <span class="case-result-metric">41 заявка</span>
+              <span class="case-result-context">за месяц — реклама окупилась за 2 недели</span>
+            </div>
             <div class="case-tags">
               <span class="badge">лендинг</span>
               <span class="badge">авто</span>
@@ -319,24 +344,45 @@
       </div>
     </section>
 
+    <section id="testimonial">
+      <div class="container">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-avatar">
+            <div class="testimonial-avatar__placeholder" aria-hidden="true">А</div>
+          </div>
+          <div class="testimonial-body">
+            <p class="testimonial-quote">Максим сделал лендинг за 6 дней. За первую неделю пришло 8 заявок — я даже не ожидал такого быстрого результата. Работает без моего участия.</p>
+            <div class="testimonial-meta">
+              <span class="testimonial-name">Алексей</span>
+              <span class="testimonial-role">мастер по ремонту квартир</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="stats">
       <div class="container">
         <div class="stats-grid">
           <div class="stat-item reveal">
             <span class="stat-number" data-target="15" data-suffix="+">0</span>
-            <span class="stat-label">проектов выполнено</span>
+            <span class="stat-label">проектов под ключ</span>
+            <span class="stat-desc">лендинги, визитки, автоматизация</span>
           </div>
           <div class="stat-item reveal">
             <span class="stat-number" data-target="5">0</span>
-            <span class="stat-label">дней — средний срок</span>
+            <span class="stat-label">дней в среднем</span>
+            <span class="stat-desc">от брифа до готового сайта</span>
           </div>
           <div class="stat-item reveal">
             <span class="stat-number" data-target="47">0</span>
-            <span class="stat-label">лидов — рекорд за месяц</span>
+            <span class="stat-label">заявок — личный рекорд</span>
+            <span class="stat-desc">у одного клиента за первый месяц</span>
           </div>
           <div class="stat-item reveal">
             <span class="stat-number" data-target="90" data-suffix="+">0</span>
             <span class="stat-label">баллов PageSpeed</span>
+            <span class="stat-desc">быстрая загрузка на любом устройстве</span>
           </div>
         </div>
       </div>
@@ -356,7 +402,7 @@
               <div class="process-body">
                 <span class="badge">День 1</span>
                 <h3>Бриф</h3>
-                <p>Созваниваемся или переписываемся в Telegram. Я узнаю про ваш бизнес, цели, дизайн, цены. Займёт 30 минут.</p>
+                <p>Созваниваемся в Telegram — узнаю цели, нишу и пожелания по дизайну.</p>
               </div>
             </article>
 
@@ -365,7 +411,7 @@
               <div class="process-body">
                 <span class="badge">День 2</span>
                 <h3>Макет</h3>
-                <p>Создаю прототип сайта в Figma. Вы видите структуру до начала разработки. Правки — пожалуйста.</p>
+                <p>Показываю прототип в Figma — вы видите структуру и вносите правки до старта.</p>
               </div>
             </article>
 
@@ -374,7 +420,7 @@
               <div class="process-body">
                 <span class="badge">День 3–4</span>
                 <h3>Разработка</h3>
-                <p>Верстаю сайт: HTML, CSS, анимации. Полный адаптив под все устройства. Вы видите прогресс каждый день.</p>
+                <p>Верстаю сайт с анимациями и полным адаптивом — прогресс виден каждый день.</p>
               </div>
             </article>
 
@@ -383,7 +429,7 @@
               <div class="process-body">
                 <span class="badge">День 5</span>
                 <h3>Правки</h3>
-                <p>Вношу до 3 раундов правок без доплат. Всё фиксируем в Telegram — быстро и по делу.</p>
+                <p>До 3 раундов правок без доплат — всё фиксируем в Telegram.</p>
               </div>
             </article>
 
@@ -392,7 +438,7 @@
               <div class="process-body">
                 <span class="badge">День 6–7</span>
                 <h3>Запуск</h3>
-                <p>Подключаю домен и хостинг, настраиваю форму и аналитику. Сайт живёт. Остаюсь на связи.</p>
+                <p>Подключаю домен, форму и аналитику — сайт живёт, я остаюсь на связи.</p>
               </div>
             </article>
           </div>
@@ -401,77 +447,60 @@
     </section>
 
     <section id="pricing">
-      <div class="container section-panel pricing-panel">
-        <div class="pricing-background" aria-hidden="true">
-          <span class="pricing-background-grid"></span>
-          <span class="pricing-background-glow"></span>
-        </div>
-        <div class="section-header section-header--center reveal">
-          <span class="section-label">ЦЕНЫ</span>
-          <h2 data-words-reveal>Прозрачные цены без сюрпризов</h2>
-          <p class="section-sub">Выберите подходящий пакет — чем больше нам сайт, тем выше результат</p>
-        </div>
-        <div class="pricing-grid">
-          <article class="card pricing-card pricing-delay-1 reveal">
-            <h3 class="pricing-name">Старт</h3>
-            <div class="pricing-price">
-              <span class="pricing-price-prefix">ОТ</span>
-              <span class="pricing-price-value">10 000</span>
-              <span class="pricing-currency">₽</span>
-            </div>
-            <p class="pricing-period-label">/месяц</p>
-            <div class="pricing-divider" aria-hidden="true"></div>
-            <ul class="pricing-features">
-              <li>Сайт-визитка с описанием услуг</li>
-              <li>Адаптив под все устройства</li>
-              <li>Базовая SEO настройка</li>
-              <li>Дизайн на основе готового шаблона</li>
-              <li>Готово за 3–5 дней</li>
-            </ul>
-            <a href="https://t.me/devbymax" class="btn btn-ghost btn-full">Выбрать</a>
-          </article>
+      <div class="pricing-shell">
+        <div class="container">
+          <div class="pricing-head reveal">
+            <span class="pricing-eyebrow">ЦЕНЫ</span>
+            <h2>Прозрачные цены без сюрпризов</h2>
+            <p>Выберите подходящий пакет — чем больше нам сайт — тем лучше результат</p>
+          </div>
+          <div class="pricing-grid">
+            <article class="pricing-card reveal">
+              <h3 class="pricing-name">Старт</h3>
+              <p class="pricing-price">ОТ 10 000 ₽</p>
+              <div class="pricing-divider" aria-hidden="true"></div>
+              <ul class="pricing-features">
+                <li>Сайт-визитка с описанием услуг</li>
+                <li>Адаптив под все устройства</li>
+                <li>Базовая SEO настройка</li>
+                <li>Дизайн на основе готового шаблона</li>
+                <li>Готово за 3–5 дней</li>
+              </ul>
+              <a href="https://t.me/devbymax" target="_blank" rel="noopener" class="pricing-btn pricing-btn--outer">Выбрать</a>
+            </article>
 
-          <article class="card pricing-card pricing-card--featured pricing-card--popular is-popular pricing-delay-2 reveal">
-            <span class="pricing-badge">Популярный</span>
-            <h3 class="pricing-name">Бизнес</h3>
-            <div class="pricing-price">
-              <span class="pricing-price-prefix">ОТ</span>
-              <span class="pricing-price-value">15 000</span>
-              <span class="pricing-currency">₽</span>
-            </div>
-            <p class="pricing-period-label">/месяц</p>
-            <div class="pricing-divider" aria-hidden="true"></div>
-            <ul class="pricing-features">
-              <li>Лендинг до 5 разделов</li>
-              <li>Форма обратной связи + Telegram уведомления</li>
-              <li>Анимации и интерактивный дизайн</li>
-              <li>Интеграция с CRM или таблицами</li>
-              <li>Google Analytics подключение</li>
-              <li>SEO оптимизация</li>
-              <li>Готово за 5–7 дней после оплаты</li>
-            </ul>
-            <a href="https://t.me/devbymax" class="btn btn-primary btn-full">Выбрать</a>
-          </article>
+            <article class="pricing-card pricing-card--featured reveal">
+              <span class="pricing-badge">ПОПУЛЯРНЫЙ</span>
+              <h3 class="pricing-name">Бизнес</h3>
+              <p class="pricing-price">ОТ 15 000 ₽</p>
+              <div class="pricing-divider" aria-hidden="true"></div>
+              <ul class="pricing-features">
+                <li>Лендинг до 5 разделов</li>
+                <li>Форма обратной связи + Telegram уведомления</li>
+                <li>Анимации и интерактивный дизайн</li>
+                <li>Интеграция с CRM или таблицами</li>
+                <li>Google Analytics подключение</li>
+                <li>SEO оптимизация</li>
+                <li>Готово за 5–7 дней после оплаты</li>
+              </ul>
+              <a href="https://t.me/devbymax" target="_blank" rel="noopener" class="pricing-btn pricing-btn--featured">Выбрать</a>
+            </article>
 
-          <article class="card pricing-card pricing-delay-3 reveal">
-            <h3 class="pricing-name">Про</h3>
-            <div class="pricing-price">
-              <span class="pricing-price-prefix">ОТ</span>
-              <span class="pricing-price-value">25 000</span>
-              <span class="pricing-currency">₽</span>
-            </div>
-            <p class="pricing-period-label">/месяц</p>
-            <div class="pricing-divider" aria-hidden="true"></div>
-            <ul class="pricing-features">
-              <li>Всё из пакета Бизнес</li>
-              <li>Многостраничный сайт — до 10+ страниц</li>
-              <li>Сложный функционал и автоматизация</li>
-              <li>Личный кабинет или каталог</li>
-              <li>A/B тестирование</li>
-              <li>Приоритет в очереди</li>
-            </ul>
-            <a href="https://t.me/devbymax" class="btn btn-ghost btn-full">Выбрать</a>
-          </article>
+            <article class="pricing-card reveal">
+              <h3 class="pricing-name">Про</h3>
+              <p class="pricing-price">ОТ 25 000 ₽</p>
+              <div class="pricing-divider" aria-hidden="true"></div>
+              <ul class="pricing-features">
+                <li>Всё из пакета Бизнес</li>
+                <li>Многостраничный сайт — до 10+ страниц</li>
+                <li>Сложный функционал и автоматизация</li>
+                <li>Личный кабинет или каталог</li>
+                <li>A/B тестирование</li>
+                <li>Приоритет в очереди</li>
+              </ul>
+              <a href="https://t.me/devbymax" target="_blank" rel="noopener" class="pricing-btn pricing-btn--outer">Выбрать</a>
+            </article>
+          </div>
         </div>
       </div>
     </section>

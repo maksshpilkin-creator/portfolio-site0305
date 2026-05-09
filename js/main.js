@@ -17,15 +17,25 @@ document.addEventListener('DOMContentLoaded', function () {
   onScroll();
 
   var heroSection = document.getElementById('hero');
+  var heroMockup = heroSection ? heroSection.querySelector('.hero-mockup') : null;
   var reduceMotionHero = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function revealHeroMockup() {
+    if (heroMockup) {
+      heroMockup.classList.add('hero-mockup--visible');
+    }
+  }
+
   if (heroSection) {
     if (reduceMotionHero) {
       heroSection.classList.add('hero--inview');
+      revealHeroMockup();
     } else {
       var heroLampObserver = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
             heroSection.classList.add('hero--inview');
+            revealHeroMockup();
             heroLampObserver.disconnect();
           }
         });
@@ -107,6 +117,14 @@ document.addEventListener('DOMContentLoaded', function () {
   revealElements.forEach(function (el) {
     revealObserver.observe(el);
   });
+
+  var pricingSection = document.getElementById('pricing');
+  if (pricingSection) {
+    var pricingCards = pricingSection.querySelectorAll('.pricing-grid .pricing-card.reveal');
+    pricingCards.forEach(function (card, index) {
+      card.style.setProperty('--reveal-delay', prefersReducedMotion ? '0s' : (index * 0.08) + 's');
+    });
+  }
 
   function animateCounter(el) {
     var target = parseInt(el.getAttribute('data-target'), 10);

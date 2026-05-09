@@ -11,7 +11,7 @@ Secondary job: occasionally execute small tasks yourself when asked directly.
 
 ### Before writing any prompt
 Read these files first — they give you the context needed to write effective prompts:
-1. `cursorrules.md` — design system, components, section order, code rules
+1. `.cursorrules.md` — design system, components, section order, code rules
 2. `docs/content.md` — all Russian copy (headings, cards, prices, testimonials)
 3. `docs/ui_ux.md` — full visual spec per section
 4. `docs/project_plan.md` — 11 phases, current progress
@@ -48,11 +48,17 @@ Return complete [filename]. No partial output.
 **CTA:** https://t.me/devbymax | **Language:** Russian UI, English code
 **Stack:** HTML + CSS + Vanilla JS | **Deploy:** Netlify
 
-**Key design tokens:**
+**Key design tokens (dark theme, gold accent):**
 ```
---bg #0A0A0A | --surface #141414 | --accent #C8A96E
---text #F0F0F0 | --muted #888888 | --border rgba(255,255,255,0.08)
-Headings: Syne 700 | Body: Inter 400-500
+--bg #0A0A0A | --surface #141414
+--accent #C8A96E | --accent-hover #D4B87A
+--text #F0F0F0 | --muted #888888
+--border rgba(255,255,255,0.08) | --border-hover rgba(255,255,255,0.15)
+--border-accent rgba(200,169,110,0.4)
+--radius-card 16px | --radius-btn 100px
+--shadow-card 0 4px 16px rgba(0,0,0,0.40)
+--shadow-card-hover 0 8px 24px rgba(0,0,0,0.55)
+Headings: Unbounded | Body: Manrope
 ```
 
 **Sections (in order):**
