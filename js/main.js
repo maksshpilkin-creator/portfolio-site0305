@@ -121,9 +121,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var pricingSection = document.getElementById('pricing');
   if (pricingSection) {
     var pricingCards = pricingSection.querySelectorAll('.pricing-grid .pricing-card.reveal');
-    pricingCards.forEach(function (card, index) {
-      card.style.setProperty('--reveal-delay', prefersReducedMotion ? '0s' : (index * 0.08) + 's');
-    });
+    if (pricingCards.length) {
+      pricingCards.forEach(function (card, index) {
+        card.style.setProperty('--reveal-delay', prefersReducedMotion ? '0s' : (index * 0.08) + 's');
+      });
+    }
   }
 
   function animateCounter(el) {

@@ -262,6 +262,10 @@ button {
   color: var(--text);
 }
 
+.logo .logo-by {
+  color: var(--accent);
+}
+
 .nav-desktop {
   display: none;
   gap: 32px;
@@ -941,10 +945,27 @@ button {
 }
 
 .card-icon {
-  display: block;
-  font-size: clamp(34px, 4vw, 40px);
-  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   margin-bottom: 16px;
+}
+
+.ui-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.ui-icon svg {
+  display: block;
+}
+
+#problems .card .card-icon.ui-icon svg {
+  width: 28px;
+  height: 28px;
 }
 
 #problems .card h3 {
@@ -1128,10 +1149,16 @@ button {
   gap: 12px;
 }
 
-.service-emoji {
-  font-size: clamp(30px, 3.2vw, 36px);
-  line-height: 1;
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
+}
+
+.service-card h3 .service-icon svg {
+  width: clamp(24px, 2.8vw, 28px);
+  height: clamp(24px, 2.8vw, 28px);
 }
 
 .service-card p {
@@ -1397,8 +1424,29 @@ button {
   color: #F0F0F0;
 }
 
-#testimonial {
+#proof {
   padding: clamp(32px, 5vw, 64px) 0;
+  background: var(--bg);
+}
+
+#proof .proof-combined .section-header {
+  margin-bottom: clamp(24px, 3vw, 40px);
+}
+
+#proof .testimonial-card {
+  max-width: 100%;
+  margin: 0;
+}
+
+.proof-divider {
+  border: 0;
+  height: 1px;
+  margin: clamp(20px, 3vw, 32px) 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+}
+
+#proof .stats-grid {
+  margin-top: 0;
 }
 
 .testimonial-card {
@@ -1504,12 +1552,7 @@ button {
   }
 }
 
-/* ==================== STATS ==================== */
-
-#stats {
-  padding: clamp(40px, 4.5vw, 64px) 0;
-  background: var(--bg);
-}
+/* ==================== PROOF (testimonial + stats) ==================== */
 
 .stats-grid {
   display: grid;
@@ -1557,7 +1600,7 @@ button {
   text-align: center;
 }
 
-#stats .stat-label {
+#proof .stat-label {
   text-transform: none;
   letter-spacing: 0.02em;
   line-height: 1.35;
@@ -1747,6 +1790,15 @@ button {
   gap: 24px;
   max-width: 1100px;
   margin: 0 auto;
+}
+
+#pricing .pricing-note {
+  text-align: center;
+  margin-top: 28px;
+  font-size: 14px;
+  color: var(--muted);
+  font-family: var(--font-body);
+  line-height: 1.6;
 }
 
 #pricing .pricing-card {
@@ -2094,8 +2146,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
-  line-height: 1;
+  color: #1A1A1A;
+}
+
+.cta-icon svg {
+  width: 28px;
+  height: 28px;
 }
 
 .cta-block h2 {
@@ -2149,6 +2205,11 @@ button {
     width: 56px;
     height: 56px;
     margin-bottom: 24px;
+  }
+
+  .cta-icon svg {
+    width: 24px;
+    height: 24px;
   }
 
   #cta .cta-block h2 {

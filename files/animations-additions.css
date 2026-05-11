@@ -1,0 +1,142 @@
+/* ==================== SCROLL PROGRESS BAR ==================== */
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+  z-index: 9999;
+  pointer-events: none;
+  transition: width 0.05s linear;
+  box-shadow: 0 0 8px rgba(200, 169, 110, 0.5);
+}
+
+/* ==================== TYPEWRITER ==================== */
+
+.tw-text {
+  display: inline;
+}
+
+.tw-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 0.85em;
+  background: var(--accent);
+  margin-left: 3px;
+  vertical-align: middle;
+  border-radius: 1px;
+  opacity: 1;
+  box-shadow: 0 0 6px rgba(200, 169, 110, 0.6);
+}
+
+.tw-cursor--blink {
+  animation: twBlink 0.7s step-start infinite;
+}
+
+@keyframes twBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tw-cursor { display: none; }
+}
+
+/* ==================== ROTATING WORDS ==================== */
+
+.word-rotator {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.word-rotator__inner {
+  display: inline-block;
+  color: var(--accent);
+  transition: none;
+}
+
+.word-rotator--out {
+  animation: wordSlideOut 0.18s ease-in forwards;
+}
+
+.word-rotator--in {
+  animation: wordSlideIn 0.22s ease-out forwards;
+}
+
+@keyframes wordSlideOut {
+  from { opacity: 1; transform: translateY(0);      }
+  to   { opacity: 0; transform: translateY(-10px);  }
+}
+
+@keyframes wordSlideIn {
+  from { opacity: 0; transform: translateY(10px);  }
+  to   { opacity: 1; transform: translateY(0);     }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .word-rotator--out,
+  .word-rotator--in {
+    animation: none;
+  }
+}
+
+/* ==================== MAGNETIC BUTTONS ==================== */
+
+.btn {
+  transform: translate(var(--mag-x, 0px), var(--mag-y, 0px));
+  /* transition already on .btn — extend it */
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
+
+/* override existing hover scale to include magnetic offset */
+.btn-primary:hover {
+  transform: translate(var(--mag-x, 0px), var(--mag-y, 0px)) scale(1.02);
+}
+
+.btn-ghost:hover {
+  transform: translate(var(--mag-x, 0px), var(--mag-y, 0px));
+}
+
+@media (max-width: 900px) {
+  .btn {
+    transform: none;
+  }
+  .btn-primary:hover,
+  .btn-ghost:hover {
+    transform: scale(1.01);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .btn-primary:hover,
+  .btn-ghost:hover {
+    transform: none !important;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+}
+
+/* ==================== SECTION LABEL SCRAMBLE GLOW ==================== */
+
+/* Brief golden flash when scramble resolves */
+.section-label[data-scrambled="true"] {
+  animation: labelResolve 0.4s ease-out 0.65s both;
+}
+
+@keyframes labelResolve {
+  0%   { text-shadow: 0 0 12px rgba(200, 169, 110, 0.8); }
+  100% { text-shadow: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-label[data-scrambled="true"] {
+    animation: none;
+  }
+}
